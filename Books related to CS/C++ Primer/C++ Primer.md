@@ -14,7 +14,7 @@ Floating-point Type: floating, double
 
 ##### Arithmetic Types
 
-![2.1.1-1](/Users/annalee/Desktop/Various-Notes/Books related to CS/C++ Primer/2.1.1-1.png)
+![2.1.1-1](2.1.1-1.png)
 
 1. A char is the same size as a single machine byte.
 2. Actually, the size of int is decided by the length of one block of CPU(int位数取决于计算机CPU的位数)
@@ -23,7 +23,7 @@ Floating-point Type: floating, double
 
 For char, there are three types: char, signed char, unsigned char. char uses one of signed chars and unsigned chars, it depends on the compiler.
 
-![2.1.1-2](/Users/annalee/Desktop/Various-Notes/Books related to CS/C++ Primer/2.1.1-2.png)
+![2.1.1-2](2.1.1-2.png)
 
 1. What is the difference between long and int?
 
@@ -49,4 +49,4 @@ For char, there are three types: char, signed char, unsigned char. char uses one
    unsigned char c = -1; //assuming 8-bit char, c has value 255
    signed char c2 = 256; //assuming 8-bit chars, the value of c2 is undefined
 ```
-![2.1.2-2](/Users/annalee/Desktop/Various-Notes/Books related to CS/C++ Primer/2.1.2-2.png)
+![2.1.2-2](2.1.2-1.png)

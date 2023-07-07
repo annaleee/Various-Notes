@@ -4,7 +4,7 @@
 
 1. CSS权威指南
 
-## 如何插入style sheet
+## link type of CSS
 
    1. external style sheet: `<link rel="stylesheet" type="text/css" href="mystyle.css">`
    2. internal style sheet:
@@ -21,7 +21,7 @@
 
    3. inline style sheet: `<p style="color:sienna;margin-left:20px">这是一个段落。</p>`
 
-## style优先级
+### style优先级
 
 inline style > internal style sheet > external style sheet.  
 
@@ -79,3 +79,37 @@ flexible box，元素称为flex-container,有main axis和cross axis，根据这�
 1. center block: margin:auto
 2. center the text: text-align:center
 3. use position: left and right to
+
+## CSS reset and CSS normalize
+
+每一个浏览器的css默认值都不一样，为了保证在所有的浏览器中css得到一个稳定的呈现，可以利用css重置把css全部归零  
+css normalize则是  
+
+1. 保护有用的浏览器默认样式而不是完全去掉它们
+2. 一般化的样式：为大部分HTML元素提供
+3. 修复浏览器自身的bug并保证各浏览器的一致性
+4. 优化CSS可用性：用一些小技巧
+5. 解释代码：用注释和详细的文档来
+
+官方文档：[CSS normalize]<http://necolas.github.io/normalize.css/>
+
+## box-sizing
+
+这个属性意思是如何定义box的总高度和总宽度，到底要不要算border padding
+
+## BEM
+
+block，element，modifier 合称为bem  
+[官方文档](https://getbem.com/introduction/)
+是一个对于class的官方命名法，让代码更规范，block__element--modifier  
+[参考文档](https://www.infoq.cn/article/vfnfwdle0zmga9psvbug)
+
+## css-module
+
+## scss/sass
+
+[教程](https://juejin.cn/post/7046323233427030053)
+
+## card element
+
+一种命名方法 card-element

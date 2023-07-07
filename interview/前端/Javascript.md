@@ -5,6 +5,26 @@
 js的一种机制，将声明的变量提前储存，供后续操作。function可以写在后面，但是提前使用var的变量只能得到undefined。  
 函数的提升优先级始终高于普通变量
 
+## shallow copy
+
+```javascript
+const arr2 = [...arr1]
+const obj2 = {...obj1}
+```
+
+however, this only fit for simple construction，如果结构一复杂这种就只能shallow copy。
+
+```javascript
+const obj2 = JSON.stringify(obj1)
+const obj22 = JSON.parse(obj2)
+```
+
+如果有一个object的element是undefined，这种方法就会寄，会remove所有的undefined 和function element
+
+
+## type coersion
+
+
 ## promise
 
 promise创建时，会传给exutor，excutor含有resolve和reject。在promise创建时，excutor会立刻执行。创建时的promise内部是个对象，初始为state和result。一旦excutor执行完，要么产生value，要么产生error。当产生value时，会立刻调用resolve，当产生error时，会立刻调用reject。  
@@ -12,6 +32,8 @@ then: 传入result和error开始操作
 catch: 捕获整个异步操作的错误
 finally: 清理操作
 fetch: 这个方法用来发起网络请求
+
+### then和await的区别
 
 ## callback
 
@@ -51,3 +73,9 @@ fetch: 这个方法用来发起网络请求
 16. some: 只要有一个是true，那就会返回true
 17. reduce: 组合生成单个值
 18. flat: 搞平
+
+## ()=>{} 和function()=>{}的区别是什么
+ 
+## event loop 查
+
+所有的callback都会被call stack call然后被webapi执行，再到callback queue里面，最后等到call stack空了以后进行执行
